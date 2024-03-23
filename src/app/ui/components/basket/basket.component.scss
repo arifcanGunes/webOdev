@@ -1,0 +1,111 @@
+.main{
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content{
+    padding: 30px;
+    background-color: azure;
+    width: 50vw;
+}
+
+.pImg{
+    width: 100px;
+    height: 120px;
+    display: inline;
+}
+
+.basketHeader{
+    text-align: center;
+    font-size: 40px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.line{
+    border-bottom: 3px solid black;
+    width: 60%;
+    margin-left: 150px;
+    margin-bottom: 25px;
+}
+
+.card{
+    width: 90%;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 20% 48% 17% 20%;
+    background-color: #bebcbc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.productName{
+    font-size: 20px;
+    margin: 20px 10px 10px;
+}
+
+.amount{
+    margin-top: 40px;
+}
+
+.up{
+    padding: 10px 8px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.down{
+    padding: 10px 8px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.count{
+    padding: 12px 8px;
+}
+
+.totalProductPrice{
+    margin-top: 30px;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.complete{
+    width: 25%;
+    height: 40px;
+    background-color: #8af695;
+    border: none;
+    margin-left: 5vw;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 18vw;
+}
+
+.complete:hover{
+    background-color: rgb(109, 132, 124);
+    color: white;
+}
+
+.unitPrice{
+    margin-left: 10px;
+}
+
+.noProduct{
+    text-align: center;
+    margin: 55px 0px;
+    font-size: 25px;
+}

@@ -1,0 +1,63 @@
+<div class="ad">
+    <h1 class="adHead">Süper Fiyat, Süper Teklif</h1>
+    <span class="altHead">Stoklar 100 adetle sınırlıdır.</span>
+</div>
+
+<div class="container">
+    <div class="main"> 
+        <div class="cerceve">
+            <div class="galeri">
+                <img *ngFor="let image of images" class="pImg" src="{{basePath+ image.imagePath}}" alt="">
+                
+            </div>
+        </div>
+        <div class="info">
+            <div class="header">
+                <h1 class="head">{{product.productName}}</h1>
+                <div class="line"></div>
+            </div>
+            <div class="category">
+                <span>Kategori  : {{product.categoryName}}</span>
+            </div>
+            <div class="price">
+                <span>Fiyat  : {{product.unitPrice}} TL</span>
+            </div>
+            <div class="stock">
+                <span>Stok Adedi  : {{product.unitsInStock}}</span>
+            </div>
+            <div class="detail">
+                <h4>Ürün Açıklaması :</h4>
+                <p>{{product.description}}</p>
+            </div>
+            <div class="warning">
+                <img src="../../../../assets/warning.png" alt="">
+                <span>Ürün maksimum 3 iş günü içinde kargoya verilecektir.</span>
+            </div>
+            <button class="addBasket" (click)="addBasket(product.productId)">Sepete Ekle</button>
+        </div>
+    </div>
+    <div class="commentsContainer">
+        <h2 class="commentHead">Yorumlar</h2>
+        <div class="commentCerceve">
+            <div class="writeComment">
+                <div class="writeCommentTop">
+                    <img class="myimg" src="../../../../assets/user.png" alt="">
+                    <span class="myName">{{customerName}}</span>
+                </div>
+                <form action="" class="commentForm">
+                    <input (keyup)="getComment(box.value)" #box class="myComment"  type="text" placeholder="Yorumunuzu buraya yazabilirsiniz...">
+                </form>
+                <div (click)="addComment()" class="sendIconContainer">
+                    <img src="../../../../assets/send.png" alt="" class="sendIcon">
+                </div>
+            </div>
+            <div class="comments">
+                <div *ngFor="let comment of comments" class="comment">
+                    <img src="../../../../assets/customer.png" alt="" class="customersImg">
+                    <span class="customersName">{{comment.customerName}}</span>
+                    <p class="customersComment">{{comment.commentInside}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

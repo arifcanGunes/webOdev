@@ -1,0 +1,26 @@
+<div class="ad">
+</div>
+<div class="header">
+    <h1 class="head">Tüm Ürünlerimiz</h1>
+    <div class="line"></div>
+</div>
+<div class="main">
+    <div class="sidebar">
+        
+        <ul class="listCategories">
+            <li><a (click)="getAllProducts()" class="allProductsBtn">Tüm Ürünler</a></li>
+            <li><a>Kategoriler</a></li>
+            <li *ngFor="let category of categories" class="categories"><a (click)="getProductsByCategory(category.categoryName)" >{{category.categoryName}}</a></li>
+            
+        </ul>
+    </div>
+    <div class="card-container">
+        <div class="card" *ngFor="let product of products">
+            <img src="{{basePath+product.imagePath}}" alt="">
+            <div class="card-content">
+                <h3>{{product.productName}}</h3>
+                <span>Fiyat: {{product.unitPrice}}</span>
+                <a routerLink="/productDetay" fragment="productId={{product.productId}}" class="readMoreBtn">İncele</a>
+            </div>
+        </div>
+</div>

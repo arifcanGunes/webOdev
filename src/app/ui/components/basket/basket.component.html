@@ -1,0 +1,25 @@
+<div class="main">
+    <div class="content">
+        <h1 class="basketHeader">Sepetim</h1>
+        <div class="line"></div>
+        <p *ngIf="isBasketEmpty" class="noProduct">Sepetinizde henüz ürün yok</p>
+        <div class="baskets">
+            <div *ngFor="let urun of products" class="card">
+                <img class="pImg" src="{{basePath+urun.product.imagePath}}" alt="">
+                <div class="left-card">
+                    <p class="productName">{{urun.product.productName}}</p>
+                    <span class="unitPrice">Birim Fiyatı: {{urun.product.unitPrice}}</span>
+                </div>
+                <div class="right-card">
+                    <div class="amount">
+                        <span onclick="window.location.reload()" (click)="downAmount(urun.product.productId)" class="down">-</span>
+                        <span class="count">{{urun.amount}}</span>
+                        <span onclick="window.location.reload()" (click)="upAmount(this.urun.product.productId)"  class="up">+</span>
+                    </div>
+                </div>
+                <div class="totalProductPrice">{{(urun.product.unitPrice * urun.amount)}} TL</div>
+            </div>
+        </div>
+        <button class="complete">Alışverişi Tamamla</button>
+    </div>
+</div>

@@ -1,0 +1,261 @@
+.ad{
+    background-color: #b2b6c0;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.ad h1{
+    font-size: 30px;
+}
+
+.header .line{
+    display: inline-block;
+    border-bottom: 2px solid black;
+    width: 50%;
+    margin-left: 100px;
+    margin-bottom: 15px;
+}
+
+.head{
+    font-weight: 500;
+    font-size: 28px;
+    margin: 50px 0px 10px 10px;
+    text-align: center;
+}
+
+.container{
+    margin: 50px 170px;
+}
+
+.main{
+    display: grid;
+    height: 70vh;
+    margin-bottom: 50px ;
+    grid-template-columns: 600px 500px;
+}
+
+.cerceve{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    border: 4px solid #111;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.galeri{
+    position: relative;
+    width: 400%;
+    left: 0;
+    animation: 16s slayt infinite;
+}
+
+@keyframes slayt {
+    0%{
+        left: 0%;
+    }
+    20%{
+        left: 0%;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    90%{
+        left: -300%;
+    }
+}
+
+.galeri img{
+    width: 25%;
+    float: left;
+}
+
+.info{
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #eff2fb;
+}
+
+.addBasket{
+    width: 18%;
+    height: 40px;
+    background-color: #8af695;
+    border: none;
+    margin-left: 5vw;
+    position: absolute;
+    bottom: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.addBasket:hover{
+    background-color: rgb(109, 132, 124);
+    color: white;
+}
+
+.warning{
+    padding: 8px 20px;
+    width: 28%;
+    background-color: rgb(247, 197, 103);
+    position: absolute;
+    bottom: 80px;
+    text-align: center;
+}
+
+.warning span{
+    font-size: 15px;
+    position: relative;
+    bottom: 5px;
+    color: white;
+}
+
+.warning img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.commentHead{
+    margin-left: 60px;
+    margin-bottom: 15px;
+    font-style: italic;
+    font-size: 28px;
+}
+
+.commentForm{
+    display: inline-block;
+    width: 58vw;
+}
+
+.commentCerceve{
+    background-color: #b2b6c0;
+    padding: 30px 40px;
+    width: 93%;
+    border-radius: 5px;
+}
+
+.myimg{
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+.myName{
+    position: relative;
+    bottom: 18px;
+}
+
+.myComment{
+    margin-top: 12px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    background-color: black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 58vw;
+    padding: 15px;
+    height: 60px;
+    color: white;
+}
+
+.myComment::placeholder{
+    color: white;
+    padding-left: 10px;
+}
+
+.sendIconContainer{
+    background-color: #e3e8f3;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    position: relative;
+    top: 11px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.sendIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.customersImg{
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.customersName{
+    position: relative;
+    bottom: 30px;
+    font-size: 16px;
+}
+
+.customersComment{
+    padding: 20px;
+    background-color: #dbe4f9;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.category{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.price{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.stock{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.detail{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.detail h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.detail p{
+    font-size: 18px;
+    color: #6c6c6c;
+}
+
+
+

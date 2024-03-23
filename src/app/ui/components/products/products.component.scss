@@ -1,0 +1,144 @@
+:ng-deep *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ad{
+    background: url("../../../../assets/ad2.webp");
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 320px;
+}
+
+.header .line{
+    display: inline-block;
+    border-bottom: 2px solid black;
+    width: 60%;
+    margin-left: 300px;
+    margin-bottom: 15px;
+}
+
+.head{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    margin: 30px 0px 15px 0px;
+}
+
+.sidebar{
+    display: inline;
+}
+
+.main{
+    margin: 40px 70px 55px 70px;
+    display: grid;
+    grid-template-columns: 200px 1100px;
+}
+
+.allProductsBtn{
+    text-decoration: none;
+}
+
+.listCategories{
+    display: inline-block;
+    border: 2px solid black;
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+.listCategories li{
+    list-style-type: none;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+    background-color: #d0d5df;
+    transition: .3s;
+}
+
+.listCategories li:hover{
+    background-color: #5F5D9C;
+    color: white;
+}
+
+.listCategories li a:hover{
+    color: white;
+}
+
+.listCategories li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #111;
+    padding: 15px 30px;
+    transition: .3s;
+}
+
+.categories{
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-context h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content span{
+    display: block;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.readMoreBtn{
+    display: inline-block;
+    width: 70%;
+    margin-left: 12%;
+    background-color: #333;
+    text-decoration: none;
+    margin-top: 16px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.card-content .readMoreBtn:hover{
+    background-color: white;
+    color: #111;
+}
+
+.allProductsBtn{
+    cursor: pointer;
+}
